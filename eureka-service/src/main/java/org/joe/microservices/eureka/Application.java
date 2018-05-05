@@ -1,20 +1,15 @@
-package com.joe.microservices.servicea;
+package org.joe.microservices.eureka;
+
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
 @SpringBootApplication
-@RestController
+@EnableEurekaServer
 @EnableDiscoveryClient
 public class Application {
-
-    @GetMapping(path = "/service-a")
-    public String ping() {
-        return "Hello from Service A";
-    }
 
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
