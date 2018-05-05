@@ -5,15 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.joe.microservices</groupId>
-    <artifactId>parent</artifactId>
-    <packaging>pom</packaging>
+    <artifactId>service-b</artifactId>
     <version>0.0.1</version>
-    <modules>
-        <module>service-a</module>
-        <module>service-b</module>
-        <module>eureka-service</module>
-        <module>zuul-service</module>
-    </modules>
 
 
 </project>
