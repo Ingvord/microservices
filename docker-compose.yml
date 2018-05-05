@@ -1,6 +1,6 @@
 version: '3'
 services:
-  eureka-server:
+  eureka-service:
     image: eureka-service
     ports:
      - "8761:8761"
