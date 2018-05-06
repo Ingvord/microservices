@@ -10,7 +10,7 @@ services:
       - eureka-service
   service-b:
     image: service-b
-    depends-on:
+    depends_on:
       - eureka-service
   zuul-service:
       image: zuul-service
