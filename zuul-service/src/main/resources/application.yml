@@ -15,6 +15,9 @@ zuul:
     service-a:
       path: /service-a/**
       url: http://service-a:9098
+    service-b:
+      path: /service-b/**
+      url: http://service-b:9099
 
 spring:
   application:
