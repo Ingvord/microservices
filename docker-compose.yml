@@ -1,10 +1,16 @@
 version: '3'
 services:
-  eureka-server:
-    image: eureka-server
+  eureka-service:
+    image: eureka-service
     ports:
      - "8761:8761"
   service-a:
     image: service-a
     depends_on:
-      - eureka-server
+      - eureka-service
+  zuul-service:
+      image: zuul-service
+      depends_on:
+       - eureka-service
+      ports:
+       - "9090:9090"
