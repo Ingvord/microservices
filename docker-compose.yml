@@ -8,6 +8,10 @@ services:
     image: service-a
     depends_on:
       - eureka-service
+  service-b:
+    image: service-b
+    depends-on:
+      - eureka-service
   zuul-service:
       image: zuul-service
       depends_on:
